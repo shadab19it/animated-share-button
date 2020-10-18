@@ -12,7 +12,7 @@
   min-height: 100vh;
 }
 
-.main-container h1, .main-container h2 {
+.main-container h1, .main-container h2, .main-container p {
   color: #f0f0f0;
   padding: 50px 0;
   text-align: center;
@@ -21,9 +21,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-container h2 {
+.main-container h2, .main-container p {
   font-size: 3rem;
   padding: 10px 0;
+}
+
+.main-container p {
+  font-size: 1.3rem;
+  color: #ff5959;
 }
 
 .main-container .btns-container,

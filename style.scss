@@ -25,6 +25,11 @@
     font-size: 3rem;
     padding: 10px 0;
   }
+  p {
+    @extend h2;
+    font-size: 1.3rem;
+    color: #ff5959;
+  }
   .btns-container,
   .icon {
     display: flex;
