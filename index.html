@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Share-Links</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Animated Share Links</h1>
+      <h2>with HTML,CSS and JavaScript</h2>
+      <div class="wrapper">
+        <div class="btns-container">
+          <div class="share-icon icon">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
+          <div class="icon whatsApp">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </div>
+          <div class="icon insta">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="icon facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </div>
+          <div class="icon linkdin">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+          <div class="icon twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="icon gmail">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="btns-container btn-container-two">
+          <div class="share-icon share-icon-two icon">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
+          <div class="icon whatsApp">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </div>
+          <div class="icon insta">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="icon facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </div>
+          <div class="icon linkdin">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+          <div class="icon twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="icon gmail">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="btns-container btn-container-four">
+          <div class="share-icon share-icon-four icon">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
+          <div class="icon whatsApp">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </div>
+          <div class="icon insta">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="icon facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </div>
+          <div class="icon linkdin">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+          <div class="icon twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="btns-container btn-container-three">
+          <div class="share-icon share-icon-three icon">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
+          <div class="icon whatsApp">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </div>
+          <div class="icon insta">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div class="icon facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </div>
+          <div class="icon linkdin">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+          <div class="icon twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="icon gmail">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const shareIcon = document.querySelector(".share-icon");
+
+      const socialIcon = document.querySelector(".icon");
+      const paperPlane = document.querySelector(".fa-paper-plane");
+
+      shareIcon.addEventListener("click", () => {
+        shareIcon.classList.toggle("active");
+      });
+
+      const shareIconTwo = document.querySelector(".share-icon-two");
+      shareIconTwo.addEventListener("click", () => {
+        shareIconTwo.classList.toggle("active");
+      });
+      const shareIconThree = document.querySelector(".share-icon-three");
+      shareIconThree.addEventListener("click", () => {
+        shareIconThree.classList.toggle("active");
+      });
+      const shareIconFour = document.querySelector(".share-icon-four");
+      shareIconFour.addEventListener("click", () => {
+        shareIconFour.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

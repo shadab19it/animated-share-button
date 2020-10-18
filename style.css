@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.575)), to(rgba(0, 0, 0, 0.514))), url("https://images.unsplash.com/photo-1576584520374-c55375496eac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.514)), url("https://images.unsplash.com/photo-1576584520374-c55375496eac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80") center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-container h1, .main-container h2 {
+  color: #f0f0f0;
+  padding: 50px 0;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container h2 {
+  font-size: 3rem;
+  padding: 10px 0;
+}
+
+.main-container .btns-container,
+.main-container .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .btns-container {
+  width: 400px;
+  height: 300px;
+}
+
+.main-container .btns-container .icon {
+  cursor: pointer;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.main-container .btns-container .icon .fa {
+  font-size: 1.6rem;
+}
+
+.main-container .btns-container .share-icon {
+  width: 58px;
+  height: 58px;
+  background-color: #fc5185;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 35px 0 rgba(73, 80, 87, 0.15);
+          box-shadow: 0 0 35px 0 rgba(73, 80, 87, 0.15);
+}
+
+.main-container .btns-container .share-icon .fa {
+  color: #fff;
+}
+
+.main-container .btns-container .active {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.main-container .btns-container .active,
+.main-container .btns-container .share-icon:hover {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  background-color: #581b98;
+}
+
+.main-container .btns-container .whatsApp .fa {
+  color: #2cb978;
+}
+
+.main-container .btns-container .insta .fa {
+  color: #f469a9;
+}
+
+.main-container .btns-container .facebook .fa {
+  color: #3d5af1;
+}
+
+.main-container .btns-container .twitter .fa {
+  color: #00acee;
+}
+
+.main-container .btns-container .linkdin .fa {
+  color: #775ada;
+}
+
+.main-container .btns-container .gmail .fa {
+  color: #ff1f5a;
+}
+
+.main-container .btns-container .whatsApp,
+.main-container .btns-container .linkdin,
+.main-container .btns-container .gmail,
+.main-container .btns-container .twitter,
+.main-container .btns-container .facebook,
+.main-container .btns-container .insta {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 0 0 35px 0 rgba(73, 80, 87, 0.15);
+          box-shadow: 0 0 35px 0 rgba(73, 80, 87, 0.15);
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.main-container .btns-container .active ~ .whatsApp {
+  -webkit-transform: translate(70px, 60px);
+          transform: translate(70px, 60px);
+}
+
+.main-container .btns-container .active ~ .whatsApp:hover {
+  background-color: #2cb978;
+}
+
+.main-container .btns-container .active ~ .whatsApp:hover .fa {
+  color: white;
+}
+
+.main-container .btns-container .active ~ .insta {
+  -webkit-transform: translate(80px, -40px);
+          transform: translate(80px, -40px);
+}
+
+.main-container .btns-container .active ~ .insta:hover {
+  background-color: #f469a9;
+}
+
+.main-container .btns-container .active ~ .insta:hover .fa {
+  color: white;
+}
+
+.main-container .btns-container .active ~ .facebook {
+  -webkit-transform: translate(-20px, 80px);
+          transform: translate(-20px, 80px);
+}
+
+.main-container .btns-container .active ~ .facebook:hover {
+  background-color: #3d5af1;
+}
+
+.main-container .btns-container .active ~ .facebook:hover .fa {
+  color: white;
+}
+
+.main-container .btns-container .active ~ .linkdin {
+  -webkit-transform: translate(-70px, -70px);
+          transform: translate(-70px, -70px);
+}
+
+.main-container .btns-container .active ~ .linkdin:hover {
+  background-color: #775ada;
+}
+
+.main-container .btns-container .active ~ .linkdin:hover .fa {
+  color: white;
+}
+
+.main-container .btns-container .active ~ .twitter {
+  -webkit-transform: translate(-90px, 20px);
+          transform: translate(-90px, 20px);
+}
+
+.main-container .btns-container .active ~ .twitter:hover {
+  background-color: #00acee;
+}
+
+.main-container .btns-container .active ~ .twitter:hover .fa {
+  color: white;
+}
+
+.main-container .btns-container .active ~ .gmail {
+  -webkit-transform: translate(10px, -90px);
+          transform: translate(10px, -90px);
+}
+
+.main-container .btns-container .active ~ .gmail:hover {
+  background-color: #ff1f5a;
+}
+
+.main-container .btns-container .active ~ .gmail:hover .fa {
+  color: white;
+}
+
+.main-container .btn-container-two .active ~ .whatsApp {
+  -webkit-transform: translate(-90px, 70px);
+          transform: translate(-90px, 70px);
+}
+
+.main-container .btn-container-two .active ~ .insta {
+  -webkit-transform: translate(-160px, 70px);
+          transform: translate(-160px, 70px);
+}
+
+.main-container .btn-container-two .active ~ .facebook {
+  -webkit-transform: translate(-20px, 70px);
+          transform: translate(-20px, 70px);
+}
+
+.main-container .btn-container-two .active ~ .linkdin {
+  -webkit-transform: translate(50px, 70px);
+          transform: translate(50px, 70px);
+}
+
+.main-container .btn-container-two .active ~ .twitter {
+  -webkit-transform: translate(120px, 70px);
+          transform: translate(120px, 70px);
+}
+
+.main-container .btn-container-two .active ~ .gmail {
+  -webkit-transform: translate(190px, 70px);
+          transform: translate(190px, 70px);
+}
+
+.main-container .btn-container-three .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.main-container .btn-container-three .icon .fa {
+  font-size: 1.2rem;
+}
+
+.main-container .btn-container-three .share-icon {
+  width: 58px;
+  height: 58px;
+}
+
+.main-container .btn-container-three .active ~ .whatsApp {
+  -webkit-transform: translate(0px, -60px);
+          transform: translate(0px, -60px);
+  -webkit-transition-delay: 0.08s;
+          transition-delay: 0.08s;
+}
+
+.main-container .btn-container-three .active ~ .insta {
+  -webkit-transform: translate(0px, -110px);
+          transform: translate(0px, -110px);
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+.main-container .btn-container-three .active ~ .facebook {
+  -webkit-transform: translate(0px, -160px);
+          transform: translate(0px, -160px);
+  -webkit-transition-delay: 0.07s;
+          transition-delay: 0.07s;
+}
+
+.main-container .btn-container-three .active ~ .linkdin {
+  -webkit-transform: translate(0px, -210px);
+          transform: translate(0px, -210px);
+  -webkit-transition-delay: 0.09s;
+          transition-delay: 0.09s;
+}
+
+.main-container .btn-container-three .active ~ .twitter {
+  -webkit-transform: translate(0px, -260px);
+          transform: translate(0px, -260px);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.main-container .btn-container-three .active ~ .gmail {
+  -webkit-transform: translate(0px, -310px);
+          transform: translate(0px, -310px);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.main-container .btn-container-four .icon {
+  width: 45px;
+  height: 45px;
+}
+
+.main-container .btn-container-four .icon .fa {
+  font-size: 1.2rem;
+}
+
+.main-container .btn-container-four .share-icon {
+  width: 58px;
+  height: 58px;
+}
+
+.main-container .btn-container-four .active ~ .whatsApp {
+  -webkit-transform: translate(-90px, 0px);
+          transform: translate(-90px, 0px);
+}
+
+.main-container .btn-container-four .active ~ .insta {
+  -webkit-transform: translate(-80px, -60px);
+          transform: translate(-80px, -60px);
+}
+
+.main-container .btn-container-four .active ~ .facebook {
+  -webkit-transform: translate(-40px, -105px);
+          transform: translate(-40px, -105px);
+}
+
+.main-container .btn-container-four .active ~ .linkdin {
+  -webkit-transform: translate(-80px, 60px);
+          transform: translate(-80px, 60px);
+}
+
+.main-container .btn-container-four .active ~ .twitter {
+  -webkit-transform: translate(-35px, 100px);
+          transform: translate(-35px, 100px);
+}
+
+.main-container .btn-container-four .active ~ .gmail {
+  -webkit-transform: translate(0px, -310px);
+          transform: translate(0px, -310px);
+}
+
+@media only screen and (max-width: 404px) {
+  .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .btn-container-three {
+    margin-top: 170px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

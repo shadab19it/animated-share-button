@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.514)),
+    url("https://images.unsplash.com/photo-1576584520374-c55375496eac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80")
+      center;
+  // background-color: #1e6262;
+  width: 100%;
+  min-height: 100vh;
+
+  h1 {
+    color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h2 {
+    @extend h1;
+    font-size: 3rem;
+    padding: 10px 0;
+  }
+  .btns-container,
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btns-container {
+    width: 400px;
+    height: 300px;
+    .icon {
+      cursor: pointer;
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      .fa {
+        font-size: 1.6rem;
+      }
+    }
+    .share-icon {
+      width: 58px;
+      height: 58px;
+      background-color: #fc5185;
+      z-index: 10;
+      box-shadow: 0 0 35px 0 rgba(73, 80, 87, 0.15);
+      .fa {
+        color: #fff;
+      }
+    }
+    .active {
+      transform: rotate(-15deg);
+    }
+
+    .active,
+    .share-icon:hover {
+      transition: all 0.2s ease-in;
+      background-color: #581b98;
+    }
+    .whatsApp {
+      .fa {
+        color: #2cb978;
+      }
+    }
+    .insta {
+      .fa {
+        color: #f469a9;
+      }
+    }
+    .facebook {
+      .fa {
+        color: #3d5af1;
+      }
+    }
+    .twitter {
+      .fa {
+        color: #00acee;
+      }
+    }
+    .linkdin {
+      .fa {
+        color: #775ada;
+      }
+    }
+    .gmail {
+      .fa {
+        color: #ff1f5a;
+      }
+    }
+
+    .whatsApp,
+    .linkdin,
+    .gmail,
+    .twitter,
+    .facebook,
+    .insta {
+      transition: all 0.4s ease-in-out;
+      box-shadow: 0 0 35px 0 rgba(73, 80, 87, 0.15);
+      background-color: #f0f0f0;
+      color: black;
+    }
+
+    .active ~ .whatsApp {
+      transform: translate(70px, 60px);
+      &:hover {
+        background-color: #2cb978;
+        .fa {
+          color: white;
+        }
+      }
+    }
+    .active ~ .insta {
+      transform: translate(80px, -40px);
+      &:hover {
+        background-color: #f469a9;
+        .fa {
+          color: white;
+        }
+      }
+    }
+    .active ~ .facebook {
+      transform: translate(-20px, 80px);
+      &:hover {
+        background-color: #3d5af1;
+        .fa {
+          color: white;
+        }
+      }
+    }
+    .active ~ .linkdin {
+      transform: translate(-70px, -70px);
+      &:hover {
+        background-color: #775ada;
+        .fa {
+          color: white;
+        }
+      }
+    }
+    .active ~ .twitter {
+      transform: translate(-90px, 20px);
+      &:hover {
+        background-color: #00acee;
+        .fa {
+          color: white;
+        }
+      }
+    }
+    .active ~ .gmail {
+      transform: translate(10px, -90px);
+      &:hover {
+        background-color: #ff1f5a;
+        .fa {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .btn-container-two {
+    .active ~ .whatsApp {
+      transform: translate(-90px, 70px);
+    }
+    .active ~ .insta {
+      transform: translate(-160px, 70px);
+    }
+    .active ~ .facebook {
+      transform: translate(-20px, 70px);
+    }
+    .active ~ .linkdin {
+      transform: translate(50px, 70px);
+    }
+    .active ~ .twitter {
+      transform: translate(120px, 70px);
+    }
+    .active ~ .gmail {
+      transform: translate(190px, 70px);
+    }
+  }
+
+  .btn-container-three {
+    .icon {
+      width: 40px;
+      height: 40px;
+
+      .fa {
+        font-size: 1.2rem;
+      }
+    }
+    .share-icon {
+      width: 58px;
+      height: 58px;
+    }
+    .active ~ .whatsApp {
+      transform: translate(0px, -60px);
+      transition-delay: 0.08s;
+    }
+    .active ~ .insta {
+      transform: translate(0px, -110px);
+      transition-delay: 0.05s;
+    }
+    .active ~ .facebook {
+      transform: translate(0px, -160px);
+      transition-delay: 0.07s;
+    }
+    .active ~ .linkdin {
+      transform: translate(0px, -210px);
+      transition-delay: 0.09s;
+    }
+    .active ~ .twitter {
+      transform: translate(0px, -260px);
+      transition-delay: 0.1s;
+    }
+    .active ~ .gmail {
+      transform: translate(0px, -310px);
+      transition-delay: 0.2s;
+    }
+  }
+  .btn-container-four {
+    .icon {
+      width: 45px;
+      height: 45px;
+
+      .fa {
+        font-size: 1.2rem;
+      }
+    }
+    .share-icon {
+      width: 58px;
+      height: 58px;
+    }
+    .active ~ .whatsApp {
+      transform: translate(-90px, 0px);
+    }
+    .active ~ .insta {
+      transform: translate(-80px, -60px);
+    }
+    .active ~ .facebook {
+      transform: translate(-40px, -105px);
+    }
+    .active ~ .linkdin {
+      transform: translate(-80px, 60px);
+    }
+    .active ~ .twitter {
+      transform: translate(-35px, 100px);
+    }
+    .active ~ .gmail {
+      transform: translate(0px, -310px);
+    }
+  }
+}
+
+@media only screen and (max-width: 404px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .btn-container-three {
+    margin-top: 170px;
+  }
+}
